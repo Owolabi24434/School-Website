@@ -1,0 +1,325 @@
+.hero{
+    display: flex;
+    padding-inline: 100px;
+    gap: 20px;
+    justify-content: space-between;
+    height: 100vh;
+}
+
+.hero_content{
+    max-width: 50%;
+    margin-top: 30px;
+}
+
+.hero_content h1{
+    font-size: 4.6rem;
+    color: rgb(226, 129, 145);
+}
+
+.hero_content h1 span{
+    color: rgb(105, 4, 4);
+}
+
+.hero_content p{
+    color: #7f8c8d;
+    margin: 20px 0;
+    font-size: 30px;
+    opacity: 1;
+    /* font-weight: 900; */
+}
+
+.buttons{
+    margin-top: 80px;
+}
+
+.cta-button, .courses-button{
+    padding: 20px 30px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.cta-button{
+    background-color: rgb(105, 4, 4);
+    color: wheat;
+    border-radius: 30px;
+}
+
+.courses-button{
+    background-color: transparent;
+    border: 1px solid ;
+    background-color: rgb(105, 4, 4);
+    color: wheat;
+    border-radius: 30px;
+}
+
+.cta-button:hover, .courses-button:hover{
+    background-color: #555;
+}
+
+.hero_images{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 50%;
+    margin-top: 30px;  
+}
+
+.student_img, .student_img_one, .student_img_two, .student_img_three{
+    width: 250px;
+    height: 270px;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+.img_top, .img_bottom{
+    display: flex;
+    gap: 5px;
+    margin-top: 5px;
+}
+
+.student_img{
+    border-top-right-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.student_img_one{
+    border-top-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+.student_img_two{
+    border-bottom-right-radius: 100px;
+    border-top-left-radius: 100px;
+}
+
+.student_img_three{
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+
+.hero_content .hero_icon{
+    font-size: 50px;
+    margin-top: -80px;
+    position: absolute;
+    margin-left: 50px;
+    animation: float-icon 3s ease-in-out infinite;
+}
+
+@keyframes float-icon{
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(0.7rem);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+
+.image_icons_paragraph{
+    max-width: 1000px;
+    width: 100%;
+    height: 300px;
+    margin-left: 150px;
+    margin-top: 50px;
+    display: flex;
+    gap: 100px;  
+}
+
+.image_icon_one h4, .image_icon_two h4, .image_icon_three h4{
+    font-size: 30px;
+}
+
+.image_icon_one p, .image_icon_two p, .image_icon_three p{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-weight: 200;
+    opacity: 0.8;
+    color: rgb(105, 4, 4);
+}
+
+.image_icons_paragraph .image_icon_one, .image_icons_paragraph .image_icon_two, .image_icons_paragraph .image_icon_three {
+    width: 300px;
+    height: 300px;
+}
+
+@media screen and (max-width : 876px) {
+    .hero_content h1{
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero_content p{
+        font-size: 20px;
+    }
+
+    .hero_images .img_top img, .hero_images .img_bottom img {
+        width: 170px;
+    }
+
+}
+
+@media screen and (max-width : 870px) {
+    .hero_content h1{
+        font-size: 50px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .hero_content p{
+        font-size: 20px;
+    }
+
+    .hero_images .img_top img, .hero_images .img_bottom img {
+        width: 170px;
+    }
+
+}
+
+@media screen and (max-width : 790px){
+    .hero_content p{
+        font-size: 16px;
+        margin-top: 50px;
+        
+    }
+
+    .hero_content h1{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .hero_images .img_top img, .hero_images .img_bottom img{
+        width: 120px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width : 650px){
+    .hero{
+        height: 140vh;
+        flex-direction: column;
+        padding-inline: 30px;
+    }
+
+    .hero_content{
+        margin-top: 30px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero_content h1{
+        font-size: 2.7rem;
+    }
+
+    .hero_content p{
+        font-size: 25px;
+    }
+
+    .buttons .cta-button{
+        margin-bottom: 50px;
+    }
+
+    .cta-button .courses-button{
+        padding: 16px 28px;
+    }
+
+    .hero_images{
+        margin-left: 150px;
+    }
+
+
+
+}
+
+@media screen and (max-width : 480px) {
+    .hero{
+        /* width: 100%; */
+        height: 140vh;
+        flex-direction: column;
+        padding-inline: 30px;
+    }
+
+    .hero_content{
+        margin-top: 10px;
+        text-align: center;
+        max-width: 100%;
+    }
+
+    .hero_content h1{
+        font-size: 2.7rem;
+    }
+
+    .hero_content p{
+        font-size: 25px;
+    }
+
+    .buttons .cta-button{
+        margin-bottom: 50px;
+    }
+
+    .cta-button .courses-button{
+        padding: 16px 28px;
+    }
+
+    .hero_images{
+        /* margin-top: -70px; */
+        margin-left: 100px;
+    }
+    .student_img, .student_img_one, .student_img_two, .student_img_three{
+        width: 150px;
+        height: 170px;
+    }
+    .image_icons_paragraph{
+        height: 140vh;
+        flex-direction: column;
+        padding-inline: 30px;
+        padding-right: 50px;
+    }
+
+    .image_icon_one, .image_icon_two, .image_icon_three{
+        margin-top: 50px;
+    }
+
+    .image_icons_paragraph .image_icon_one p, .image_icons_paragraph .image_icon_two p, .image_icons_paragraph .image_icon_three p{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width : 414px) {
+    /* .buttons .cta-button{
+        margin-bottom: 50px;
+    } */
+
+    .hero_content p{
+        font-size: 20px;
+    }
+
+}
+
+@media screen and (max-width : 360px) {
+    .hero_images .img_top img, .hero_images .img_bottom img{
+        width: 100px;
+        /* margin-bottom: 100px; */
+        padding-bottom: 50px;
+    }
+
+    .hero_content h1{
+        font-size: 30px;
+    }
+
+}
+
+@media screen and (max-width : 300px) {
+    .hero_images .img_top img, .hero_images .img_bottom img{
+        width: 70px;
+        
+    }
+
+    .hero_images{
+        margin-right: 80px;
+    }
+
+}
